@@ -1,15 +1,32 @@
 // Header.js
-import React from 'react';
+import React, {useState} from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 export const Header = () => {
+
+    const [menuOpen] = useState(false);
+
   return (
     <header>
       <nav>
+      <Link to='/' className='logo'>
+        <img src='./GmlBlack.png' alt='GML Logo' />
+      </Link>
+      
         <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Notes</li>
-          {/* Add more links as needed */}
+        <li>
+          <NavLink to='/' exact>
+            Home
+          </NavLink>
+        </li>
+      <li>
+          <NavLink to='/projects'>Projects</NavLink>
+        </li>
+
+        <li>
+          <NavLink to='/notes'>Notes</NavLink>
+        </li>
+
         </ul>
       </nav>
       {/* Your name or logo */}
