@@ -1,10 +1,11 @@
 // Header.js
-import React, {useState} from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import './Header.css';
 
 export const Header = () => {
 
-    const [menuOpen] = useState(false);
+    
 
   return (
     <header>

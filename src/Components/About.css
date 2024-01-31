@@ -1,0 +1,70 @@
+/* About.css */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separates the two halves */
+    padding: 4rem; /* Consistent spacing around */
+    max-width: 1200px; /* Matches other components for consistency */
+    margin: auto; /* Centers the section on the page */
+    gap: 2rem; /* Room between image and text */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  /* Ensure the image remains on the left */
+  .about .image-section {
+    flex: 1; /* Takes up half the space */
+    display: flex; /* Centers the image */
+    justify-content: flex-start; /* Aligns the image to the left */
+    align-items: center; /* Aligns the image vertically */
+  }
+  
+  .about img {
+    max-width: 100%; /* Ensures the image is not bigger than its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Apple-style rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Ensure the text remains on the right */
+  .about .text-section {
+    flex: 1; /* Takes up half the space */
+    padding-left: 2rem; /* Padding for spacing from the image */
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      padding: 2rem; /* Reduced padding */
+    }
+  
+    /* Image takes the full width of the container and has margin-bottom */
+    .about .image-section {
+      justify-content: center; /* Center aligns the image */
+      margin-bottom: 2rem;
+    }
+  
+    .about img {
+      max-width: 80%; /* Image takes a smaller percentage of the container, adjusts for spacing */
+      margin: auto; /* Center the image within the flex container */
+    }
+  
+    /* Text content takes the full width */
+    .about .text-section {
+      padding-left: 0; /* Removes the left padding */
+    }
+  }
