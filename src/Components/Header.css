@@ -1,0 +1,65 @@
+
+
+/* Header.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff; /* Change the background color as needed */
+    color: rgb(0, 0, 0); /* White text color */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    float: left;
+  }
+  
+  .logo img {
+    width: 40px; /* Adjust the logo width as needed */
+    margin-right: 1rem; /* Adjust the spacing between logo and text */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-links ul {
+    display: flex; /* 5 */
+  list-style: none; /* 6 */
+  }
+
+  
+  
+  
+  .nav-links li {
+    padding-left: 1rem; /* Or you can use display: inline; */  }
+  
+  .nav-links li a {
+    display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* White text color */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .nav-links a:hover {
+    color: #070542; /* Change the hover color as needed */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav-links {
+      flex-direction: column;
+    }
+    nav- ul {
+      flex-direction: column;
+      padding-top: 0.5rem;
+    }
+    nav li {
+      padding: 0.5rem 0;
+    }
+  } 
