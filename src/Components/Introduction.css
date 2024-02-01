@@ -1,20 +1,20 @@
 /* Introduction.css */
 
 .introduction {
-    display: flex;
-    flex-wrap: wrap; /* Wrap items to next line on smaller screens */
-    align-items: center; /* Center align items vertically */
-    justify-content: center; /* Center content horizontally */
-    padding: 4rem; /* Responsive padding */
-    background-color: #fff; /* Apple's white background color */
-    color: #333; /* Typical Apple dark grey text color for contrast */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Apple's system font stack for cleanliness */
-    gap: 2rem; /* Space between the text section and the image */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Separates the two halves */
+  padding: 4rem; /* Consistent spacing around */
+  max-width: 1200px; /* Matches other components for consistency */
+  margin: auto; /* Centers the section on the page */
+  gap: 2rem; /* Room between image and text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
   
   .text-section {
     flex: 1; /* Allows text section to grow */
     max-width: 50%; /* Text section takes up to half the container width */
+    
   }
   
   .text-section h1 {

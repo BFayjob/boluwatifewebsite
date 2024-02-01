@@ -1,22 +1,20 @@
 // ProjectCard.js
 import React from 'react';
-import './Projects.css';
-import './Skills.css';
+import './ProjectCard.css';
 
-
-const ProjectCard = () => {
+const ProjectCard = ({ title, description, skills, imageUrl, projectUrl }) => {
   return (
     <div className="project-card">
-      <a href="https://example-project-details-link.com" target="_blank" rel="noopener noreferrer">
-        <h3>Portfolio Website</h3>
-      </a>
-      <p>Skills gained: React.js, HTML, CSS</p>
-      <p>
-        This portfolio website showcases my skills and projects. It is built using React.js for the front end,
-        and the design is crafted with HTML and CSS. The website provides an interactive and visually appealing
-        presentation of my professional journey and projects.
-      </p>
-      <img src="path-to-project-image.jpg" alt="Portfolio Website" />
+      <div className="project-description">
+        <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+          <h3>{title}</h3>
+        </a>
+        <p className="project-skills">Skills gained: {skills}</p>
+        <p>{description}</p>
+      </div>
+      <div className="project-image-container">
+        <img src={imageUrl} alt={title} />
+      </div>
     </div>
   );
 };

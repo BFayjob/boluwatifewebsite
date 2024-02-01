@@ -11,7 +11,7 @@ export const Header = () => {
     <header>
       <nav>
       <Link to='/' className='logo'>
-        <img src='./GmlBlack.png' alt='GML Logo' />
+        <img  alt='BMF Logo' />
       </Link>
       
         <ul>
