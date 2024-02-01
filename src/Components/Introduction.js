@@ -2,6 +2,7 @@
 import React from 'react';
 import About from './About'; // Import the About component
 import Skills from './Skills'; // Import the Skills component
+import Projects from './Projects'; // Import the Projects component
 import './Introduction.css'; // Import the CSS file for styling
 
 const Introduction = () => {
@@ -28,6 +29,11 @@ const Introduction = () => {
       {/* About Section */}
       <section className="about">
         <About />
+      </section>
+
+      {/* Projects Section */}
+      <section className="projects">
+        <Projects />
       </section>
     </div>
   );

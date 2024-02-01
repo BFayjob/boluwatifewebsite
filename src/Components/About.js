@@ -29,7 +29,7 @@ const About = () => {
         </p>
 
         {/* Optional: You can include the image here if needed */}
-        {/* <img src="path-to-your-illustration-image.jpg" alt="Illustration" /> */}
+         <img src="path-to-your-illustration-image.jpg" alt="Illustration" /> 
       </div>
     </section>
   );
