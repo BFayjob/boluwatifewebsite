@@ -76,7 +76,7 @@ const Contact = () => {
 
       {/* Copyright */}
       <article className="mt-auto">
-        <p className="text-gray-400">&copy; Boluwatife Fayjob</p>
+        <p className="text-gray-400">&copy; 2024 Boluwatife Fayjob</p>
       </article>
     </article>
   );
