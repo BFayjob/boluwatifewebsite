@@ -1,25 +1,33 @@
 // Introduction.js
 import React from 'react';
-import About from './About'; // Import the About component
-import Skills from './Skills'; // Import the Skills component
-import Projects from './Projects'; // Import the Projects component
-import './Introduction.css'; // Import the CSS file for styling
+import About from './About';
+import Skills from './Skills';
+import Projects from './Projects';
+import './Introduction.css';
 
 const Introduction = () => {
   return (
-    <div>
+    <div className="md:grid md:gap-8 md:grid-cols-5">
       {/* Introduction Section */}
-      <section className="introduction">
-        <div className="text-section">
-          <h1>HELLO, I'M BOLUWATIFE FAYJOB</h1>
-          <p>I AM PASSIONATE ABOUT CLOUD AND CYBERSECURITY.</p>
-          <p>CLOUD SECURITY ENGINEER</p>
-        </div>
+      <div className="flex">
+        {/* Article 1: Introduction Text (Left) */}
+        <article className="self-center py-6 text-center md:text-left md:col-start-1 md:col-end-4">
+          <h1 className="mb-3.5 text-gray-600 tracking-wide uppercase font-semibold text-base">HELLO, I'M BOLUWATIFE FAYJOB</h1>
+          <p className="mb-4 text-4xl md:text-5xl lg:text-6xl md:leading-tight">I AM PASSIONATE ABOUT CLOUD AND CYBERSECURITY.</p>
+          <p class="mb-4 font-semibold">CLOUD SECURITY ENGINEER</p>
+        </article>
 
-        <div className="image-section">
-          <img src="path-to-your-image.jpg" alt="Boluwatife Fayjob" />
-        </div>
-      </section>
+        {/* Article 2: Image (Right) */}
+        <article className="w-1/2 p-8">
+          <div className="relative w-full css-esdfm0 e1oudrmi0">
+            <img
+              className="rounded-full h-48 w-48 object-cover mx-auto"
+              src="convopic.jpg"
+              alt="Boluwatife Fayjob"
+            />
+          </div>
+        </article>
+      </div>
 
       {/* Skills Section */}
       <section className="skills">
