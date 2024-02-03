@@ -35,7 +35,8 @@ const Introduction = () => {
       </section>
 
       {/* About Section */}
-      <section className="about">
+      <section className="px-6 sm:px-10 md:px-24 lg:px-28 py-24 text-center bg-opacity-30 bg-custom-tea md:pt-14 mb-pb-20 css-1vum2is ewajf2h0">
+      <h2 className="mb-7 text-gray-800 text-2xl sm:text-3xl md:text-4xl tracking-wide font-semibold">About Me</h2>
         <About />
       </section>
 

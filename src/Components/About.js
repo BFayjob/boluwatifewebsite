@@ -16,7 +16,7 @@ const About = () => {
 
       {/* Article 2: Text Content (Right) */}
       <article className="w-1/2 pl-8">
-      <h2 className="mb-7 text-gray-800 text-2xl sm:text-3xl md:text-4xl tracking-wide font-semibold">About Me</h2>
+      <h2 className="mb-7 text-gray-800 text-2xl sm:text-3xl md:text-4xl tracking-wide font-semibold">My Story</h2>
 
         <div className="self-center text-left md:-mt-6 text-custom-purple">
 
