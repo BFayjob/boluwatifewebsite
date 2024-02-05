@@ -1,39 +1,57 @@
-/* Projects.css */
+/* Base styles */
+.projects-apple-style {
+  padding: 2rem 0;
+}
 
-.projects {
+.featured-projects-container {
+  margin-bottom: 4rem; /* Adjust as needed */
+}
+
+.featured-project,
+.regular-project {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 4rem;
-  max-width: 1200px;
-  margin: auto;
-  gap: 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin-bottom: 2rem;
 }
 
-.projects-title {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 0.5rem; /* Adjust the space between the title and the subtitle as needed */
+.featured-project-image,
+.regular-project-image {
+  flex: 0 0 40%;
+  margin-right: 2rem; /* Adjust margin as needed */
 }
 
-.projects-subtitle {
-  text-align: center;
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem; /* Provides space between the subtitle and the project cards */
+.featured-project-content,
+.regular-project-content {
+  flex: 1;
 }
 
-.projects h2 {
-  font-size: 2rem;
-  color: #333;
+.featured-project-title,
+.regular-project-title {
   margin-bottom: 0.5rem;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .projects {
-    padding: 2rem;
-  }
+.featured-project-description,
+.regular-project-description {
+  margin-bottom: 1rem;
+}
+
+/* Specific styles for wrapping and left-aligned image */
+.featured-projects-container {
+  /* Define appropriate width/max-width for wrapping */
+  width: 80%;
+  margin: 0 auto; /* Center the section */
+}
+
+.featured-project {
+  flex-direction: row; /* Ensure horizontal layout */
+}
+
+.featured-project-image,
+.regular-project-image {
+  order: 0; /* Move image to first position */
+}
+
+.featured-project-content,
+.regular-project-content {
+  order: 1; /* Move content to second position */
 }

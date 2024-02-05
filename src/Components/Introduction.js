@@ -1,4 +1,3 @@
-// Introduction.js
 import React from 'react';
 import About from './About';
 import Skills from './Skills';
@@ -7,43 +6,43 @@ import './Introduction.css';
 
 const Introduction = () => {
   return (
-    <div className="md:grid md:gap-8 md:grid-cols-5">
-      {/* Introduction Section */}
-      <div className="flex">
-        {/* Article 1: Introduction Text (Left) */}
-        <article className="self-center py-6 text-center md:text-left md:col-start-1 md:col-end-4">
-          <h1 className="mb-3.5 text-gray-600 tracking-wide uppercase font-semibold text-base">HELLO, I'M BOLUWATIFE FAYJOB</h1>
-          <p className="mb-4 text-4xl md:text-5xl lg:text-6xl md:leading-tight">I AM PASSIONATE ABOUT CLOUD AND CYBERSECURITY.</p>
-          <p class="mb-4 font-semibold">CLOUD SECURITY ENGINEER</p>
-        </article>
+    <div className="min-h-screen relative" style={{ backgroundImage: "url(/url/to/optimized/background.jpg)" }}>
+      <div className="container mx-auto px-4 pt-20 pb-16 grid grid-cols-2 gap-16 justify-items-center items-center desktop:text-bold lg:text-bold">
+        {/* Profile Image (Mobile/Desktop) */}
+        <div className="lg:col-start-1 col-span-1 flex justify-end mr-10 lg:mr-0">
+          <img
+            className="rounded-full object-cover shadow-lg"
+            src="/path/to/your-profile-image.jpg"
+            alt="Boluwatife Fayjob"
+            width={200}
+            height={200}
+          />
+        </div>
 
-        {/* Article 2: Image (Right) */}
-        <article className="w-1/2 p-8">
-          <div className="relative w-full css-esdfm0 e1oudrmi0">
-            <img
-              className="rounded-full h-48 w-48 object-cover mx-auto"
-              src="convopic.jpg"
-              alt="Boluwatife Fayjob"
-            />
-          </div>
-        </article>
+        {/* Introduction Text (Mobile/Desktop) */}
+        <div className="lg:col-start-2 col-span-1">
+          <h1 className="text-3xl font-bold text-gray-800 mb-4 lg:mb-8">HELLO, I'M BOLUWATIFE FAYJOB</h1>
+          <p className="text-5xl font-bold text-gray-800 mb-4 lg:mb-8">I AM PASSIONATE ABOUT CLOUD AND CYBERSECURITY.</p>
+          <p className="text-sm font-bold text-gray-800">CLOUD SECURITY ENGINEER</p>
+        </div>
       </div>
 
-      {/* Skills Section */}
-      <section className="skills">
-        <Skills />
-      </section>
+      {/* About Me & Skills (Mobile/Desktop) */}
+      <div className="w-full lg:w-1/2">
+          <Skills />
+        </div>
+      <div className="container mx-auto px-4 pt-12 flex flex-col lg:flex-row lg:space-x-16">
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <About />
+        </div>
+        
+      </div>
 
-      {/* About Section */}
-      <section className="px-6 sm:px-10 md:px-24 lg:px-28 py-24 text-center bg-opacity-30 bg-custom-tea md:pt-14 mb-pb-20 css-1vum2is ewajf2h0">
-      <h2 className="mb-7 text-gray-800 text-2xl sm:text-3xl md:text-4xl tracking-wide font-semibold">About Me</h2>
-        <About />
-      </section>
-
-      {/* Projects Section */}
-      <section className="projects">
+     
+      <div className="container mx-auto px-4 pt-12  lg:block">
         <Projects />
-      </section>
+      </div>
+
     </div>
   );
 };

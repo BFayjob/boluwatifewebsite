@@ -43,17 +43,16 @@
   }
   
   /* Responsive rules for smaller screens */
+  
+  
   @media (max-width: 768px) {
-    .introduction {
-      padding: 2rem; /* Reduce padding on smaller screens */
+    /* Indent all styles within the media query here */
+    .grid {
+      grid-template-columns: 1fr; /* Single column on mobile */
     }
-  
-    .text-section,
-    .image-section {
-      max-width: 100%; /* Each section takes full width on smaller screens */
+    .text-5xl {
+      font-size: 3xl; /* Adjust text size on mobile */
     }
-  
-    .image-section img {
-      max-width: 100%; /* Image takes full width of its container */
-    }
+    /* Add more media queries for specific styles as needed */
   }
+  

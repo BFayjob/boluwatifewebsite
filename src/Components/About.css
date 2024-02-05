@@ -44,6 +44,14 @@
     margin-bottom: 1rem;
     line-height: 1.6;
   }
+  .about-section {
+    background-color: #f8f8f8; /* Light cream color */
+    padding: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: wavy-border 2s infinite ease-in-out;
+  }
   
   /* Responsive design for smaller screens */
   @media (max-width: 768px) {
@@ -66,5 +74,16 @@
     /* Text content takes the full width */
     .about .text-section {
       padding-left: 0; /* Removes the left padding */
+    }
+  }
+  @keyframes wave {
+    0% {
+      border-left: 10px solid transparent;
+    }
+    50% {
+      border-left: 10px solid #f8f8f8;
+    }
+    100% {
+      border-left: 10px solid transparent;
     }
   }

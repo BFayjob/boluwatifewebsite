@@ -50,29 +50,7 @@ const Contact = () => {
         </a>
       </div>
 
-      {/* Permanent Contact Details */}
-      <div className="fixed bottom-0 left-0 p-4 flex flex-col items-start space-y-4 bg-white text-white">
-        <h2 className="text-2xl font-bold">Contact</h2>
-
-        {/* Social Media Icons */}
-        <div className="flex items-center space-x-4">
-          <a href="https://www.instagram.com/bojyaf/" target="_blank" rel="noopener noreferrer">
-            <img className="w-8 h-8" src="instagram.png" alt="Instagram" />
-          </a>
-          <a href="mailto:boluwatife.fayjob@outlook.com">
-            <img className="w-8 h-8" src="gmail.png" alt="Email" />
-          </a>
-          <a href="https://twitter.com/BOJYAF" target="_blank" rel="noopener noreferrer">
-            <img className="w-8 h-8" src="twitter.png" alt="Twitter" />
-          </a>
-          <a href="https://discord.com/channels/@bojyaf" target="_blank" rel="noopener noreferrer">
-            <img className="w-8 h-8" src="discord.png" alt="Discord" />
-          </a>
-          <a href="https://github.com/BFayjob" target="_blank" rel="noopener noreferrer">
-            <img className="w-8 h-8" src="github.png" alt="GitHub" />
-          </a>
-        </div>
-      </div>
+      
 
       {/* Copyright */}
       <article className="mt-auto">
