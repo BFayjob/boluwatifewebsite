@@ -3,7 +3,7 @@ import React from 'react';
 import './Skills.css';
 
 const skillsList = [
-  'JavaScript', 'CSS', 'AWS Amplify', 'Firebase', 'React.js',
+  'JavaScript', 'CSS', 'AWS Amplify', 'AWS DynamoDB' ,'Firebase', 'React.js',
   'Qualys', 'Active Directory', 'Incident Response', 'Networking',
   'Splunk','PFsense', 
   // Add any additional skills here

@@ -1,5 +1,14 @@
 /* Introduction.css */
 
+.background-fade {
+  background: linear-gradient(to bottom, #e0b9aa 0%, white 100%);
+  background-attachment: fixed;
+}
+body {
+  background: linear-gradient(to bottom, #e0b9aa 0%, white 100%);
+  background-attachment: fixed;
+}
+
 
 .introduction {
   display: flex;

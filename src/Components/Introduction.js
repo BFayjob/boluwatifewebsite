@@ -6,13 +6,13 @@ import './Introduction.css';
 
 const Introduction = () => {
   return (
-    <div className="min-h-screen relative" style={{ backgroundImage: "url(/url/to/optimized/background.jpg)" }}>
-      <div className="container mx-auto px-4 pt-20 pb-16 grid grid-cols-2 gap-16 justify-items-center items-center desktop:text-bold lg:text-bold">
+    <div className="min-h-screen relative background-image">
+  <div className="container mx-auto px-4 pt-20 pb-16 grid grid-cols-2 gap-16 justify-items-center items-center">
         {/* Profile Image (Mobile/Desktop) */}
         <div className="lg:col-start-1 col-span-1 flex justify-end mr-10 lg:mr-0">
           <img
             className="rounded-full object-cover shadow-lg"
-            src="/path/to/your-profile-image.jpg"
+            src="suitImage.jpg"
             alt="Boluwatife Fayjob"
             width={200}
             height={200}

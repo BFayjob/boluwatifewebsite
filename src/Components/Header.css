@@ -1,8 +1,8 @@
 /* Header.css Influenced by Apple's Minimalistic Design Aesthetic */
 
 header {
-  background-color: #f8f8f7; /* A neutral, light background similar to Apple's aesthetic */
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+  background-color: #D0D2FF; /* New light blue background color */
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05); /* A subtle shadow for depth */
   position: relative;
   z-index: 10;
   padding: 20px 0; /* Generous padding for a spacious feel */

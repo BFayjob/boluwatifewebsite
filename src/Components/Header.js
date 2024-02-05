@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 export const Header = () => {
   return (
-    <header className="bg-white p-4">
+    <header className="bg-#D0D2FF p-4">
       <nav className="flex items-center justify-between">
         <Link to='/' className='logo text-black font-bold text-xl'>
           BOJYAF
